@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Bestilling</title>
+
+</head>
+<body>
+<div class ="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form class="form">
+                <h1>Bestilling av kinobilletter</h1>
+                <div class="form-group">
+                    <label for="velgFilmDropdown" >Velg film: </label>
+                    <div id="velgFilmDropdown"></div>
+                    <span style="color:red;" id="resultatFilm"></span>
+                </div>
+                <div class="form-group">
+                    <label for="antall" > Antall </label></td>
+                    <input type ="text" class="form-control" id ="antall" size="2"/>
+                    <span style="color:red;" id="resultatAntall"></span>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn"> Fornavn </label></td>
+                    <input type="text" class="form-control" id="fornavn"/>
+                    <span style="color:red;" id="resultatFornavn"></span>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">Etternavn</label></td>
+                    <input type="text" class="form-control" id="etternavn"/>
+                    <span style="color:red;" id="resultatEtternavn"></span>
+                </div>
+                <div class="form-group">
+                    <label for="telefonNr">Telefonnr </label></td>
+                    <input type="text" class="form-control" id="telefonnr" />
+                    <span style="color:red;" id="resultatTelefonnr"></span>
+                </div>
+                <div class="form-group">
+                    <label for="epost">Epost</label></td>
+                    <input type="text" class="form-control" id="epost"/>
+                    <span style="color:red;" id="resultatEpost"></span>
+                </div>
+            </form>
+            <button class="btn btn-primary" onclick="registrerBestilling()">Kjøp billett</button>
+        </div>
+        <div class="col-md-8">
+            Alle billetter:
+            <div id="billettregister" class="table-responsive"></div>
+            <button class="btn btn-danger" onclick="slettAlt()">Slett alle billettene</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
